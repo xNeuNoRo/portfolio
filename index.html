@@ -61,7 +61,10 @@
       </div>
     </section>
     <section class="social">
-      <h1>Enlaces</h1>
+      <div class="sec-title">
+        <img src="assets/icons/world.svg" />
+        <h1>Enlaces</h1>
+      </div>
       <div class="social-links">
         <a href="https://github.com/xNeuNoRo" target="_blank" rel="noopener">
           <img class="social-icon" src="assets/icons/github.svg" alt="github" />
@@ -90,7 +93,10 @@
       </div>
     </section>
     <section id="skills" class="skills">
-      <h1>Habilidades</h1>
+      <div class="sec-title">
+        <img src="assets/icons/star.svg" />
+        <h1>Habilidades</h1>
+      </div>
       <div class="skills-container">
         <div class="skill">
           <img src="assets/icons/html5.svg" alt="html5" />
@@ -153,7 +159,10 @@
       </div>
     </section>
     <section id="projects" class="projects">
-      <h1>Proyectos</h1>
+      <div class="sec-title">
+        <img src="assets/icons/folder.svg" />
+        <h1>Proyectos</h1>
+      </div>
       <div class="projects-container">
         <div class="project">
           <div class="introduce">
@@ -195,7 +204,10 @@
       </div>
     </section>
     <section id="contact" class="contact">
-      <h1>Contacto</h1>
+      <div class="sec-title">
+        <img src="assets/icons/mail.svg" />
+        <h1>Contacto</h1>
+      </div>
       <div class="email-container">
         <input
           class="email"
@@ -323,7 +335,7 @@
 
       window.addEventListener("scroll", () => {
         if (window.scrollY > 20) {
-          if (!menuToggledByButton) {
+          if (!menuToggledByButton && window.innerWidth <= 850) {
             navbarList.classList.remove("show");
           }
         } else {
